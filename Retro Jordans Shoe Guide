@@ -1,0 +1,28 @@
+--Create Retro Jordans Shoe Guide
+
+CREATE TABLE Mezza (id INTEGER PRIMARY KEY, Color TEXT, Size INTEGER, Retro TEXT, name TEXT,Price INTEGER); 
+
+INSERT INTO Mezza VALUES (1,"Red",9.5,"12","Reverse Flu Game",217);
+INSERT INTO Mezza VALUES (2,"Navy",9.5,"13","Navy",195);
+INSERT INTO Mezza VALUES (3,"Yellow/Black",9.5,"12","Black Taxi",170);
+INSERT INTO Mezza VALUES (4,"Purple",9.5,"13","Court Purple",205);
+INSERT INTO Mezza VALUES (5,"Green",9.5,"13","Lucky Green",216);
+INSERT INTO Mezza VALUES (6,"White",9.5,"11","Columbia 2001",406);
+INSERT INTO Mezza VALUES (7,"Yellow",9.5,"13","Del'sol",172);
+INSERT into Mezza VALUES (8,"Navy",10,"11","Midnight Navy Velvet",253);
+INSERT into mezza values (9,"Red/Black",9.5,"11","Bred",376);
+INSERT INTO mezza VALUES (10,"Green/Black",9,"13","Olive",280);
+INSERT INTO mezza VALUES (11,"Gray",9.5,"12","Stealth",229);
+INSERT INTO mezza VALUES (12,"Purple/Black",9.5,"12","Dark Concord",277);
+INSERT INTO mezza VALUES (13,"White/Black",9.5,"12","Taxi",462);
+Insert INTO mezza VALUES (14,"Blue/Gray",9.5,"12","Grey University Blue",298);
+INSERT INTO mezza VALUES (15,"Blue/Black",9.5,"13","Hyper Royal",277);
+
+--display the database ordered by price 
+SELECT * from Mezza ORDER BY "Price";
+
+-- what is the toal cost of all shoes
+SELECT Sum(price) from mezza;
+
+--what is the average cost of the shoes
+SELECT AVG (price) from Mezza;
